@@ -1,0 +1,38 @@
+#!/bin/sh
+
+# A script to log the cpu and memory usage of a linux processes 
+# launch with APP's name as argument just before starting the APP
+# scriptname: logmyapp
+#
+# REM: unix-only, will not work under OSX lacking top '-b' (sad!)
+#
+# inspired by http://www.unix.com/shell-programming-and-scripting/
+#   223177-shell-script-logging-cpu-memory-usage-linux-process.html
+#
+# Stephane Plaisance VIB-BITS June-1-2014 v1.0
+
+if [ $# -lt 1 ] ; then
+	echo "Usage: logmyapp <name of the app to monitor> <interval (sec|default=5)>"
+	exit
+fi
+
+# Change this as needed
+# repeat loop every x sec
+FREQ=${2:-5}
+init=$(date +%s)
+
+# log file name and header
+LOG_FILE=${1}_usage"$(date +%s)".log
+header='#time pid %cpu %MEM App'
+echo ${header%/#\ /\t} > $LOG_FILE
+
+echo "# logging to $LOG_FILE every $FREQ sec"
+echo "# press <Ctrl>-C to stop logging"
+
+# infinite loop will run until ctrl-C is hit
+while :; do 
+  top -b -n1 | awk -v runtime=$(echo $(date +%s) - ${init} | bc) -v app=${1} 'match($0, app) {print runtime, $1, $9, $10, $12}' >> ${LOG_FILE}
+  sleep ${FREQ}
+done
+
+# when the app closes, no additional line will be added to the log file
