@@ -85,11 +85,11 @@ The resulting picture reports bowtie2 activity and RAM usage (here in png format
 
 <img src="logmyapp/pictures/bowtie2_monitoring.png?raw=true" alt="monitoring results" style="width: 300px;"/>
 
-## logging all outputs to a file for inspection with **runandlog**
+### logging all outputs to a file for inspection with **runandlog**
 
 Uses tee to copy all output, including standard error messages to a log file. After completion, the script reports the time spent by the command. 
 
-## **come back later for more**
+### **come back later for more**
 
 ------------
 enjoy!
