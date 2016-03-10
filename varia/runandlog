@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# A script to log all output to a file 	and report the total run timerun
+# A script to log all output to a file and report the total run timerun
 # scriptname: runandlog
 #, usage: runandlog <command> <parameters>
 # Stephane Plaisance VIB-BITS June-1-2014 v1.0
