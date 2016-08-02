@@ -94,6 +94,12 @@ Uses tee to copy all output, including standard error messages to a log file. Af
 ------------
 enjoy!
 
+## Log temperature in the server room for plotting or simply controlling 
+
+A basic Perl script **Temper-1F/logtemp.pl** to monitor the Temper-1F measures to file. A somple example of gnuplot code is added to generate images. This is very basic and heavily relies on the python package <https://github.com/padelt/temper-python> used to master the USB device.
+
+
+
 <h4>Please send comments and feedback to <a href="mailto:bits@vib.be">bits@vib.be</a></h4>
 ------------
 
