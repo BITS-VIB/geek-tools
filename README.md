@@ -98,7 +98,7 @@ The customized bash/gnupot script **[logtemp2plot.sh](Temper-1F/logtemp2plot.sh)
 
 **logtemp2plot.sh -h**
 
-<pre>
+```bash
  Usage: logtemp2plot.sh <logtemp.pl output file>
  # script version 1.0, 2016_08_05
  #  -i <inputfile|templog.txt>
@@ -107,7 +107,7 @@ The customized bash/gnupot script **[logtemp2plot.sh](Temper-1F/logtemp2plot.sh)
  #  -e <until time|default to last recorded>
  #  -b <min scale temp|0>
  #  -t <max scale temp|40>
-</pre>
+```
 
 ### Example
 
