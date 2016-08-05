@@ -68,15 +68,3 @@ while (1) {
 }
 
 close LOG;
-
-## plot resulting data
-## create a gnuplot script plottemp.gp
-# set term png
-# set output "./logtmemp.png"
-# set title "Temp Data"
-# set xlabel "Time (s)"
-# set ylabel "Temp (C)"
-# set grid
-# set datafile separator "\t"
-# plot "./logtmemp.txt" using 2:3 with lines
-## run gnuplot plottemp.gp

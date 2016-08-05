@@ -1,10 +1,8 @@
 #!/bin/bash
 
-# make plot from a temperature log file (Temper-1F)
-#
 # script name: logtemp2plot.sh
-# from http://askubuntu.com/questions/701986/how-to-execute-commands-in-gnuplot-using-shell-script
-
+# make plot from a temperature log file (Temper-1F / logtemp.pl)
+## from http://askubuntu.com/questions/701986/how-to-execute-commands-in-gnuplot-using-shell-script
 # Stephane Plaisance (VIB-NC+BITS) 2016/08/05; v1.0
 #
 # visit our Git: https://github.com/BITS-VIB
