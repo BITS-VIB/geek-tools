@@ -94,7 +94,7 @@ Uses tee to copy all output, including standard error messages to a log file. Af
 
 A basic Perl script **[logtemp.pl](Temper-1F/logtemp.pl)** is used to monitor the **Temper-1F** measures to file. A simple example of gnuplot code is added to generate images. This is very basic and heavily relies on the python package <a href="https://github.com/padelt/temper-python" target="_blank">temper-python</a> used to master the cheap USB device.
 
-The customized bash/gnupot script **[logtemp.pl](Temper-1F/logtemp2plot.pl)** takes care of making a nice image from the log resulrs.
+The customized bash/gnupot script **[logtemp2plot.sh](Temper-1F/logtemp2plot.sh)** takes care of making a nice image from the log resulrs.
 
 ------------
 ### **come back later for more**
