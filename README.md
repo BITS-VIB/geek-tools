@@ -96,6 +96,18 @@ A basic Perl script **[logtemp.pl](Temper-1F/logtemp.pl)** is used to monitor th
 
 The customized bash/gnupot script **[logtemp2plot.sh](Temper-1F/logtemp2plot.sh)** takes care of making a nice image from the log results.
 
+<pre>
+logtemp2plot.sh -h
+Usage: logtemp2plot.sh <logtemp.pl output file>
+# script version 1.0, 2016_08_05
+#  -i <inputfile|templog.txt>
+## optional parameters (|default value)
+#  -s <from time|0>
+#  -e <until time|default to last recorded>
+#  -b <min scale temp|0>
+#  -t <max scale temp|40>
+</pre>
+
 ### Example
 
 The output of ambiant temperature logging in our computer server room is shown as example (<a href="Temper-1F/example/templog.txt">templog.txt</a>). Feeding the text file to the gnuplot tool with the command <pre>logtemp2plot.sh -i templog.txt -s 80000 -e 110000 -b 18 -t 24</pre> produced the following picture.
