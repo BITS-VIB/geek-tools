@@ -89,15 +89,15 @@ The resulting picture reports bowtie2 activity and RAM usage (here in png format
 
 Uses tee to copy all output, including standard error messages to a log file. After completion, the script reports the time spent by the command. 
 
-### **come back later for more**
 
 ## Log temperature in the server room for plotting or simply controlling 
 
 A basic Perl script **[logtemp.pl](Temper-1F/logtemp.pl)** is used to monitor the **Temper-1F** measures to file. A simple example of gnuplot code is added to generate images. This is very basic and heavily relies on the python package <a href="https://github.com/padelt/temper-python" target="_blank">temper-python</a> used to master the cheap USB device.
 
+The customized bash/gnupot script **[logtemp.pl](Temper-1F/logtemp2plot.pl)** takes care of making a nice image from the log resulrs.
 
 ------------
-enjoy!
+### **come back later for more**
 
 <h4>Please send comments and feedback to <a href="mailto:bits@vib.be">bits@vib.be</a></h4>
 ------------
