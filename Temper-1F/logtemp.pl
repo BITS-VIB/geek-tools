@@ -1,9 +1,10 @@
 #!/usr/bin/perl -w
 
-# Script: logtemp.pl : log temperature from a temper-1F USB device
+# Script: logtemp.pl : log temperature from a TEMPer1F USB device
 # makes use of executable code from https://github.com/padelt/temper-python
 # run this script in a screen session and break it with Ctrl-C when ready
 # or make a cron job to continuously record temperature
+# you can plot the results using the accompanying shell/gnuplot script
 #
 # Stephane Plaisance (VIB-NC+BITS) 2016/08/02; v1.0
 # visit our Git: https://github.com/BITS-VIB
