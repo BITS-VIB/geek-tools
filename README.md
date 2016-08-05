@@ -72,14 +72,14 @@ The output of a 15 million paired end reads **bowtie2** mapping job to the human
 
 The monitoring data was fed to the accompanying R script with the following command:
 
-<pre>
+```r
 log2plot.R -i bowtie2_usage1401561413.log \
     -r 16 \
     -m 6 \
     -f 1 \
     -t "bowtie2 monitoring" \
     -o bowtie2_monitoring
-</pre>
+```
 
 The resulting picture reports bowtie2 activity and RAM usage (here in png format)
 
@@ -98,7 +98,7 @@ The customized bash/gnupot script **[logtemp2plot.sh](Temper-1F/logtemp2plot.sh)
 
 **logtemp2plot.sh -h**
 
-```bash
+```
  Usage: logtemp2plot.sh <logtemp.pl output file>
  # script version 1.0, 2016_08_05
  #  -i <inputfile|templog.txt>
