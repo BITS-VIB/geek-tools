@@ -26,7 +26,8 @@ In order to use this script, you will need [R] and RScript installed on your com
 Installing the dependencies is documented on the top of the code. Please read the respective package documentations if you wish to improve these scripts.
 
 **log2plot.R -h**
-<pre>
+
+```
 Usage: ./log2plot.R [options]
 
 Options:
@@ -50,13 +51,13 @@ Options:
 
 	-h, --help
 		Show this help message and exit
-</pre>
+```
 
 ### Example screenshots
 
 The output of a 15 million paired end reads **bowtie2** mapping job to the human reference genome (hg19) is shown as example (<a href="logmyapp/pictures/bowtie2_usage1401561413.log">bowtie2_usage1401561413.log</a>):
 
-<pre>
+```
 #time pid %cpu %MEM App
 11 1223 7.8 0.2 bowtie2-align-s
 16 1223 7.8 2.8 bowtie2-align-s
@@ -68,7 +69,7 @@ The output of a 15 million paired end reads **bowtie2** mapping job to the human
 980 1223 685.0 22.6 bowtie2-align-s
 985 1223 756.6 22.6 bowtie2-align-s
 991 1223 780.5 22.6 bowtie2-align-s
-</pre>
+```
 
 The monitoring data was fed to the accompanying R script with the following command:
 
@@ -111,7 +112,11 @@ The customized bash/gnupot script **[logtemp2plot.sh](Temper-1F/logtemp2plot.sh)
 
 ### Example
 
-The output of ambiant temperature logging in our computer server room is shown as example (<a href="Temper-1F/example/templog.txt">templog.txt</a>). Feeding the text file to the gnuplot tool with the command <pre>logtemp2plot.sh -i templog.txt -s 80000 -e 110000 -b 18 -t 24</pre> produced the following picture.
+The output of ambiant temperature logging in our computer server room is shown as example (<a href="Temper-1F/example/templog.txt">templog.txt</a>). Feeding the text file to the gnuplot tool with the command:
+
+```bash
+logtemp2plot.sh -i templog.txt -s 80000 -e 110000 -b 18 -t 24</pre> produced the following picture.
+```
 
 <img src="Temper-1F/example/templog.png?raw=true" alt="temperature log results" style="width: 300px;"/>
 
