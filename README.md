@@ -13,9 +13,9 @@ Start your favorite CLI program (or scrip running it) and monitor cpu and ram wi
 
 REM: The bash script is only functional under Unix, the Apple Darwin top command lacking the -b option does not allow running it (if you know how to fix this, please let me know!!).
 
-<pre>
+```
 Usage: logmyapp [name of the app to monitor] [interval (sec|default=5)]
-</pre>
+```
 
 ### Plotting from the log file with **log2plot.R**
 
@@ -26,7 +26,6 @@ In order to use this script, you will need [R] and RScript installed on your com
 Installing the dependencies is documented on the top of the code. Please read the respective package documentations if you wish to improve these scripts.
 
 **log2plot.R -h**
-
 ```
 Usage: ./log2plot.R [options]
 
