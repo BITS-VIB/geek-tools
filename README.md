@@ -111,11 +111,13 @@ The customized bash/gnupot script **[logtemp2plot.sh](Temper-1F/logtemp2plot.sh)
 
 ### Example
 
-The output of ambiant temperature logging in our computer server room is shown as example (<a href="Temper-1F/example/templog.txt">templog.txt</a>). Feeding the text file to the gnuplot tool with the command:
+The output of ambiant temperature logging in our computer server room is shown as example (<a href="Temper-1F/example/templog.txt">templog.txt</a>). 
 
+Feeding the text file to the gnuplot tool with the command:
 ```bash
-logtemp2plot.sh -i templog.txt -s 80000 -e 110000 -b 18 -t 24</pre> produced the following picture.
+logtemp2plot.sh -i templog.txt -s 80000 -e 110000 -b 18 -t 24
 ```
+produced the following picture
 
 <img src="Temper-1F/example/templog.png?raw=true" alt="temperature log results" style="width: 300px;"/>
 
