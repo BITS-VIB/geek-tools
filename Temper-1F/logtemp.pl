@@ -14,9 +14,6 @@ use warnings;
 use Getopt::Std;
 use POSIX qw(strftime);
 
-# autoflush
-$|=1;
-
 my $version = "1.0";
 
 # locate the executable on your own system 
@@ -48,6 +45,9 @@ defined($opt_h) && die $usage."\n";
 # open stream from log file
 open LOG, "> $outfile" || die $!;
 
+# autoflush
+autoflush(*LOG,  1);
+
 our $timepoint = 0;
 
 # infinite loop
@@ -69,3 +69,7 @@ while (1) {
 }
 
 close LOG;
+
+sub autoflush {
+   my $h = select($_[0]); $|=$_[1]; select($h);
+}
